@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Can Humans Live on Mars? — Emmanuel Adu-Wadier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Starfield Canvas -->
+  <canvas id="starfield"></canvas>
+
+  <!-- Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-trail"></div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">MARS<span>2050</span></div>
+    <ul class="nav-links">
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#explore">Explore Mars</a></li>
+      <li><a href="#simulation">Launch Sim</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-tag reveal">SCIENCE RESEARCH PROJECT 2026</div>
+      <h1 class="hero-title reveal">
+        <span class="line">I Wonder Could</span>
+        <span class="line accent">Humans Live on Mars?</span>
+      </h1>
+      <p class="hero-sub reveal">
+        And what technology would be needed to make this possible?
+      </p>
+      <p class="hero-byline reveal">Presented by: Emmanuel Adu-Wadier</p>
+      <a href="#intro" class="cta-btn reveal">Explore the Project</a>
+    </div>
+    <div class="hero-planet">
+      <div class="planet"></div>
+      <div class="planet-ring"></div>
+      <div class="orbit orbit-1"><div class="moon"></div></div>
+      <div class="orbit orbit-2"><div class="moon moon-2"></div></div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- INTRODUCTION -->
+  <section class="section" id="intro">
+    <div class="section-label reveal">01 — INTRODUCTION</div>
+    <h2 class="section-title reveal">Topic Question & Rationale</h2>
+    <div class="intro-grid">
+      <div class="intro-block reveal" data-delay="0">
+        <div class="intro-block-label">Topic Question</div>
+        <p>I wonder in the future could humans live on Mars and what technology would be needed to make this possible?</p>
+      </div>
+      <div class="intro-block reveal" data-delay="150">
+        <div class="intro-block-label">Rationale</div>
+        <p>I chose this question because I love technology and space. And I find space exploration especially on Mars is phenomenal. And I believe further researching and gathering information on this would be fascinating and very cool.</p>
+        <p style="margin-top:1rem;">The question is scientifically important because it'll help us understand how to advance humanity technologically. By developing advanced medical systems which would be essential to keep us alive on Mars, and energy systems to harvest energy through capturing the energy from the Sun more efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH DOCUMENTATION -->
+  <section class="section section-alt" id="research">
+    <div class="section-label reveal">02 — RESEARCH DOCUMENTATION</div>
+    <h2 class="section-title reveal">What I Learned</h2>
+    <p class="section-desc reveal">Notes from three credible sources on Mars habitation and the technology needed.</p>
+    <div class="cards-grid">
+
+      <div class="card reveal" data-delay="0">
+        <div class="card-source">rmg.co.uk — Royal Museum Greenwich</div>
+        <div class="card-icon">🏛️</div>
+        <h3>How Could Humans Live on Mars?</h3>
+        <p>Going to Mars takes around 2–3 years depending on the mission. When going to space the astronauts face around 250–700 times more radiation than we experience on Earth, because when astronauts go to space Earth's magnetic sphere is not protecting them.</p>
+        <p style="margin-top:0.75rem;">For them to live on Mars they can live in a Mars Space Station and have remote controlled robots help manage it. Another way to make Mars habitable is by extracting the oxygen out of Mars's majority air component, Carbon Dioxide, by using a rover that does just that called MOXIE.</p>
+        <p style="margin-top:0.75rem;">To build houses on Mars to house astronauts they'll use StarCrete — made of Starch and Mars soil — and it'll be twice as times stronger than concrete. Also you don't stack them like bricks, you use 3D printing technology to build the housing units!</p>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="card reveal" data-delay="150">
+        <div class="card-source">nasa.gov — 6 Technologies NASA is Advancing</div>
+        <div class="card-icon">🚀</div>
+        <h3>Technologies to Send Humans to Mars</h3>
+        <p>Most likely we'll send humans to Mars by the early 2030s and it'll be around a 2 year trip. Since Mars is 140 million miles away from Earth, humans would need to build highly advanced propulsion systems based on nuclear energy — either a nuclear electric rocket or a nuclear thermal propulsion.</p>
+        <p style="margin-top:0.75rem;">Second, we'd need to build a massive inflatable heat shield to protect astronauts from heat entering Mars's atmosphere. Third, a Martian space suit that'll protect us from extreme temperatures and radiation, and allow for lots of mobility.</p>
+        <p style="margin-top:0.75rem;">Fourth, an advanced rover that's like an RV but for astronauts to do testing without being harmed by Mars's climate. Fifth, we'll need a reliable power source like nuclear energy. Lastly, we'll need laser communication to transfer data in high definition and quickly.</p>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="card reveal" data-delay="300">
+        <div class="card-source">harvardmagazine.com — Harvard Mars Habitability Research</div>
+        <div class="card-icon">🎓</div>
+        <h3>Harvard Mars Habitability & Space Medicine</h3>
+        <p>Astronauts would need highly advanced medical technology that can detect health problems early and treat them efficiently and effectively. Since getting help from Earth takes 20+ minutes per signal, astronauts must be able to handle medical emergencies entirely on their own.</p>
+        <p style="margin-top:0.75rem;">The technology we obtain after going to Mars can also be used back on Earth to treat trauma patients and multi-organ failure — meaning the mission benefits all of humanity, not just the astronauts on Mars.</p>
+        <p style="margin-top:0.75rem;">They'll also build technology to protect astronauts from harmful radiation rays and extreme temperature changes, since Mars has no magnetic field to shield against solar and cosmic radiation like Earth does.</p>
+        <div class="card-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section class="section" id="technology">
+    <div class="section-label reveal">03 — TECHNOLOGY NEEDED</div>
+    <h2 class="section-title reveal">What It Would Take</h2>
+    <p class="section-desc reveal">The technology that would be needed to make living on Mars possible.</p>
+    <div class="tech-list">
+      <div class="tech-item reveal" data-delay="0">
+        <div class="tech-number">01</div>
+        <div class="tech-content">
+          <h3>Nuclear Propulsion Systems</h3>
+          <p>A nuclear electric rocket or nuclear thermal propulsion to get humans to Mars — 140 million miles away — in a reasonable time. Current chemical rockets would take too long and expose astronauts to too much radiation during the journey.</p>
+        </div>
+        <div class="tech-bar"><div class="tech-fill" data-width="60"></div></div>
+      </div>
+      <div class="tech-item reveal" data-delay="100">
+        <div class="tech-number">02</div>
+        <div class="tech-content">
+          <h3>MOXIE — Oxygen from CO₂</h3>
+          <p>A rover-based device that extracts oxygen from Mars's majority air component, Carbon Dioxide. NASA has already tested this with a small MOXIE unit on the Perseverance rover. A scaled-up version could supply entire colonies.</p>
+        </div>
+        <div class="tech-bar"><div class="tech-fill" data-width="80"></div></div>
+      </div>
+      <div class="tech-item reveal" data-delay="200">
+        <div class="tech-number">03</div>
+        <div class="tech-content">
+          <h3>StarCrete 3D-Printed Habitats</h3>
+          <p>Houses on Mars built from StarCrete — made of Starch and Mars soil — which is twice as strong as concrete. These are 3D printed rather than stacked like bricks, making construction possible without a huge human workforce on the surface.</p>
+        </div>
+        <div class="tech-bar"><div class="tech-fill" data-width="55"></div></div>
+      </div>
+      <div class="tech-item reveal" data-delay="300">
+        <div class="tech-number">04</div>
+        <div class="tech-content">
+          <h3>Inflatable Heat Shield</h3>
+          <p>A massive inflatable heat shield to protect astronauts and their craft from the extreme heat generated when entering Mars's atmosphere during landing.</p>
+        </div>
+        <div class="tech-bar"><div class="tech-fill" data-width="50"></div></div>
+      </div>
+      <div class="tech-item reveal" data-delay="400">
+        <div class="tech-number">05</div>
+        <div class="tech-content">
+          <h3>Mars Space Station & Advanced Spacesuits</h3>
+          <p>A pressurized Mars Space Station with remote controlled robots to manage operations. Combined with next-gen Martian spacesuits that protect from extreme temperatures, radiation, and dust — while still allowing full mobility for long working hours on the surface.</p>
+        </div>
+        <div class="tech-bar"><div class="tech-fill" data-width="65"></div></div>
+      </div>
+      <div class="tech-item reveal" data-delay="500">
+        <div class="tech-number">06</div>
+        <div class="tech-content">
+          <h3>Nuclear Power & Laser Communication</h3>
+          <p>A reliable nuclear power source to keep the base running day and night through Mars's dust storms. Paired with laser communication systems to transfer data to and from Earth in high definition and at high speeds.</p>
+        </div>
+        <div class="tech-bar"><div class="tech-fill" data-width="70"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE MARS SURFACE -->
+  <section class="section section-alt" id="explore">
+    <div class="section-label reveal">04 — INTERACTIVE MODEL</div>
+    <h2 class="section-title reveal">Explore the Mars Surface</h2>
+    <p class="section-desc reveal">Click or hover any glowing hotspot to learn about that location on Mars.</p>
+    <div class="mars-explorer reveal">
+      <div class="mars-surface">
+        <!-- SVG Mars terrain -->
+        <svg class="mars-svg" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+          <!-- Sky gradient -->
+          <defs>
+            <radialGradient id="skyGrad" cx="50%" cy="0%" r="80%">
+              <stop offset="0%" stop-color="#1a0800"/>
+              <stop offset="100%" stop-color="#050101"/>
+            </radialGradient>
+            <radialGradient id="groundGrad" cx="50%" cy="50%" r="80%">
+              <stop offset="0%" stop-color="#8B3A1A"/>
+              <stop offset="100%" stop-color="#4a1a08"/>
+            </radialGradient>
+            <radialGradient id="hotGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#e84c1e" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#e84c1e" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Sky -->
+          <rect width="900" height="260" fill="url(#skyGrad)"/>
+
+          <!-- Distant mountains -->
+          <polygon points="0,260 60,180 130,240 200,160 280,230 350,150 420,220 500,140 580,210 650,155 730,215 800,170 870,200 900,190 900,260" fill="#3d1508" opacity="0.8"/>
+          <polygon points="0,260 80,200 160,250 240,190 320,240 400,185 480,235 560,178 640,225 720,185 800,220 900,200 900,260" fill="#5a2010" opacity="0.9"/>
+
+          <!-- Ground -->
+          <rect y="260" width="900" height="160" fill="url(#groundGrad)"/>
+
+          <!-- Ground texture lines -->
+          <path d="M0,280 Q150,270 300,285 Q450,295 600,278 Q750,268 900,280" stroke="#6b2a12" stroke-width="1.5" fill="none" opacity="0.5"/>
+          <path d="M0,310 Q200,300 400,315 Q600,325 900,308" stroke="#6b2a12" stroke-width="1" fill="none" opacity="0.4"/>
+          <path d="M0,340 Q250,330 500,345 Q700,352 900,338" stroke="#6b2a12" stroke-width="1" fill="none" opacity="0.3"/>
+
+          <!-- Craters -->
+          <ellipse cx="120" cy="300" rx="45" ry="12" fill="#3d1508" opacity="0.7"/>
+          <ellipse cx="120" cy="298" rx="43" ry="10" fill="#5a2010" opacity="0.5"/>
+          <ellipse cx="700" cy="320" rx="60" ry="15" fill="#3d1508" opacity="0.6"/>
+          <ellipse cx="700" cy="318" rx="57" ry="12" fill="#5a2010" opacity="0.4"/>
+          <ellipse cx="430" cy="380" rx="35" ry="8" fill="#3d1508" opacity="0.5"/>
+
+          <!-- Rocks -->
+          <polygon points="200,310 215,290 235,308 220,315" fill="#6b2a12"/>
+          <polygon points="580,295 600,272 625,293 610,302" fill="#5a2010"/>
+          <polygon points="780,305 800,285 818,303 805,312" fill="#6b2a12"/>
+          <polygon points="50,330 65,315 80,328 70,338" fill="#5a2010"/>
+          <polygon points="340,360 358,342 375,358 362,368" fill="#6b2a12"/>
+
+          <!-- MOXIE Rover hotspot -->
+          <g class="hotspot" data-id="moxie" transform="translate(160,270)">
+            <circle r="28" fill="url(#hotGlow)" class="hs-glow"/>
+            <circle r="13" fill="#e84c1e" opacity="0.2" class="hs-pulse"/>
+            <circle r="8" fill="#e84c1e" class="hs-dot" filter="url(#glow)"/>
+            <line x1="0" y1="-8" x2="0" y2="-22" stroke="#e84c1e" stroke-width="1.5" opacity="0.8"/>
+            <text x="0" y="-28" text-anchor="middle" fill="#e84c1e" font-size="9" font-family="Orbitron,monospace" letter-spacing="1">MOXIE</text>
+          </g>
+
+          <!-- Olympus Mons hotspot -->
+          <g class="hotspot" data-id="olympus" transform="translate(450,145)">
+            <circle r="28" fill="url(#hotGlow)" class="hs-glow"/>
+            <circle r="13" fill="#e84c1e" opacity="0.2" class="hs-pulse"/>
+            <circle r="8" fill="#e84c1e" class="hs-dot" filter="url(#glow)"/>
+            <line x1="0" y1="-8" x2="0" y2="-22" stroke="#e84c1e" stroke-width="1.5" opacity="0.8"/>
+            <text x="0" y="-28" text-anchor="middle" fill="#e84c1e" font-size="9" font-family="Orbitron,monospace" letter-spacing="1">OLYMPUS MONS</text>
+          </g>
+
+          <!-- Habitat hotspot -->
+          <g class="hotspot" data-id="habitat" transform="translate(680,255)">
+            <circle r="28" fill="url(#hotGlow)" class="hs-glow"/>
+            <circle r="13" fill="#e84c1e" opacity="0.2" class="hs-pulse"/>
+            <circle r="8" fill="#e84c1e" class="hs-dot" filter="url(#glow)"/>
+            <line x1="0" y1="-8" x2="0" y2="-22" stroke="#e84c1e" stroke-width="1.5" opacity="0.8"/>
+            <text x="0" y="-28" text-anchor="middle" fill="#e84c1e" font-size="9" font-family="Orbitron,monospace" letter-spacing="1">HABITAT DOME</text>
+          </g>
+
+          <!-- Polar ice cap hotspot -->
+          <g class="hotspot" data-id="ice" transform="translate(820,100)">
+            <circle r="28" fill="url(#hotGlow)" class="hs-glow"/>
+            <circle r="13" fill="#e84c1e" opacity="0.2" class="hs-pulse"/>
+            <circle r="8" fill="#e84c1e" class="hs-dot" filter="url(#glow)"/>
+            <line x1="0" y1="-8" x2="0" y2="-22" stroke="#e84c1e" stroke-width="1.5" opacity="0.8"/>
+            <text x="0" y="-28" text-anchor="middle" fill="#e84c1e" font-size="9" font-family="Orbitron,monospace" letter-spacing="1">POLAR ICE CAP</text>
+          </g>
+
+          <!-- Dust storm hotspot -->
+          <g class="hotspot" data-id="storm" transform="translate(80,120)">
+            <circle r="28" fill="url(#hotGlow)" class="hs-glow"/>
+            <circle r="13" fill="#e84c1e" opacity="0.2" class="hs-pulse"/>
+            <circle r="8" fill="#e84c1e" class="hs-dot" filter="url(#glow)"/>
+            <line x1="0" y1="-8" x2="0" y2="-22" stroke="#e84c1e" stroke-width="1.5" opacity="0.8"/>
+            <text x="0" y="-28" text-anchor="middle" fill="#e84c1e" font-size="9" font-family="Orbitron,monospace" letter-spacing="1">DUST STORM</text>
+          </g>
+
+          <!-- Valles Marineris hotspot -->
+          <g class="hotspot" data-id="valles" transform="translate(320,310)">
+            <circle r="28" fill="url(#hotGlow)" class="hs-glow"/>
+            <circle r="13" fill="#e84c1e" opacity="0.2" class="hs-pulse"/>
+            <circle r="8" fill="#e84c1e" class="hs-dot" filter="url(#glow)"/>
+            <line x1="0" y1="-8" x2="0" y2="-22" stroke="#e84c1e" stroke-width="1.5" opacity="0.8"/>
+            <text x="0" y="-28" text-anchor="middle" fill="#e84c1e" font-size="9" font-family="Orbitron,monospace" letter-spacing="1">VALLES MARINERIS</text>
+          </g>
+
+          <!-- Atmosphere label top -->
+          <text x="450" y="20" text-anchor="middle" fill="rgba(240,180,120,0.3)" font-size="10" font-family="Orbitron,monospace" letter-spacing="3">MARTIAN ATMOSPHERE — 95% CO₂ — 1% EARTH PRESSURE</text>
+        </svg>
+
+        <!-- Info Panel -->
+        <div class="mars-info-panel" id="marsInfoPanel">
+          <div class="mip-default">
+            <div class="mip-icon">📍</div>
+            <p>Click any glowing hotspot on the surface to learn about that location.</p>
+          </div>
+          <div class="mip-content" id="mipContent" style="display:none;">
+            <div class="mip-header">
+              <span class="mip-icon" id="mipIcon"></span>
+              <h3 id="mipTitle"></h3>
+            </div>
+            <p id="mipDesc"></p>
+            <div class="mip-fact" id="mipFact"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAUNCH SIMULATION -->
+  <section class="section" id="simulation">
+    <div class="section-label reveal">05 — MISSION SIMULATION</div>
+    <h2 class="section-title reveal">Launch to Mars</h2>
+    <p class="section-desc reveal">Can you pilot your rocket from Earth to Mars? Make critical decisions at each mission phase — one wrong call and the mission fails.</p>
+    <div class="sim-wrapper reveal">
+      <canvas id="simCanvas"></canvas>
+      <div class="sim-ui">
+        <!-- HUD -->
+        <div class="sim-hud" id="simHud">
+          <div class="hud-item"><span class="hud-label">PHASE</span><span class="hud-val" id="hudPhase">—</span></div>
+          <div class="hud-item"><span class="hud-label">FUEL</span><span class="hud-val" id="hudFuel">100%</span></div>
+          <div class="hud-item"><span class="hud-label">HULL</span><span class="hud-val" id="hudHull">100%</span></div>
+          <div class="hud-item"><span class="hud-label">DISTANCE</span><span class="hud-val" id="hudDist">0 M mi</span></div>
+        </div>
+        <!-- Start screen -->
+        <div class="sim-screen" id="simStart">
+          <div class="sim-screen-icon">🚀</div>
+          <h3>MARS MISSION 2032</h3>
+          <p>You are the commander of humanity's first crewed Mars mission. You'll face 5 critical decision points. Choose wisely — lives depend on it.</p>
+          <button class="sim-btn" id="btnStart">INITIATE LAUNCH SEQUENCE</button>
+        </div>
+        <!-- Decision screen -->
+        <div class="sim-screen" id="simDecision" style="display:none;">
+          <div class="sim-phase-tag" id="decPhaseTag"></div>
+          <h3 id="decTitle"></h3>
+          <p id="decDesc"></p>
+          <div class="sim-choices" id="simChoices"></div>
+        </div>
+        <!-- Result screen -->
+        <div class="sim-screen" id="simResult" style="display:none;">
+          <div class="sim-screen-icon" id="resIcon"></div>
+          <h3 id="resTitle"></h3>
+          <p id="resDesc"></p>
+          <div class="res-stats" id="resStats"></div>
+          <button class="sim-btn" id="btnRestart">RETRY MISSION</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section class="section section-conclusion" id="conclusion">
+    <div class="section-label reveal">06 — CONCLUSION</div>
+    <h2 class="section-title reveal">Summary & Future Research</h2>
+    <div class="conclusion-grid">
+      <div class="conclusion-box reveal">
+        <div class="conclusion-box-label">📋 Summary of Findings</div>
+        <p>
+          In my research I learned that humans living on Mars is actually being worked on right now. The trip takes 2 to 3 years and exposes astronauts to up to 700 times more radiation than Earth. To get there we need nuclear propulsion systems to travel the 140 million miles and an inflatable heat shield to survive entering Mars's atmosphere.
+        </p>
+        <p>
+          Once there, houses will be 3D printed using StarCrete made from Martian soil, oxygen will be made by a device called MOXIE that takes Mars's CO₂ atmosphere and extracts the oxygen. Also, astronauts will need advanced medical technology that can detect and treat health problems without any help from Earth since signals take around 20 minutes to reach us.
+        </p>
+        <div class="conclusion-sig">— Emmanuel Adu-Wadier</div>
+      </div>
+      <div class="conclusion-box conclusion-box-future reveal" data-delay="150">
+        <div class="conclusion-box-label">🔭 Future Research</div>
+        <p>
+          For future research I'd want to research whether Mars's atmosphere could ever be changed enough to one day be breathable without a suit, and habitable for human life.
+        </p>
+        <p>
+          This concept is called <em>terraforming</em> — and if it were possible, it would be the most ambitious engineering project in human history. Understanding whether it's scientifically achievable would be my next step in exploring this topic.
+        </p>
+      </div>
+    </div>
+    <div class="final-planet reveal">
+      <div class="fp-core"></div>
+      <div class="fp-ring r1"></div>
+      <div class="fp-ring r2"></div>
+      <div class="fp-ring r3"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">MARS<span>2050</span></div>
+    <p>Science Research Project · 2026 · Emmanuel Adu-Wadier</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
